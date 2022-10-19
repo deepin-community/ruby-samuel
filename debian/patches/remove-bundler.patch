@@ -1,0 +1,16 @@
+Description: Removed bundler
+Removed bundler as apt would take care of the dependencies.
+Forwarded: No
+Author: Minto Joseph <mintojoseph@yahoo.com>
+Last-Update: 2013-05-25
+
+--- a/test/test_helper.rb
++++ b/test/test_helper.rb
+@@ -1,7 +1,3 @@
+-require 'rubygems'
+-require 'bundler'
+-Bundler.setup
+-
+ require 'shoulda'
+ require 'mocha'
+ require 'net/http'
